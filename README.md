@@ -4,7 +4,7 @@ A simple shell script that download all java files from [webRTC master branch](h
 #### Who needs it ?
 If you need to modify/add/remove some functionality of libjingle_peerconnection.jar in your webRTC library.
 
-#### Jobs
+#### Function
 [download_org_webrtc_filesdownload_org_webrtc_files](https://github.com/pallab-gain/webrtc_build_util/blob/master/download_source.sh#L36)
 * Based on current webRTC source directory download java files from three different urls for org.webrtc package. 
 
