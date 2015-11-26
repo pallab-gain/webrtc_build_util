@@ -67,22 +67,6 @@ download_org_webrtc_files(){
 	delete_folder ${name}.3.tar.gz
 }
 
-download_loggin_java_file(){
-	path=webrtc/base/java/src/org/webrtc.tar.gz
-	name=${PARENT_DIR}
-
-	#-------------------------------------------------------------------------
-	echo 'downloading files from '${DOWNLOAD_PATH}/${path}
-	wget ${DOWNLOAD_PATH}/${path} -O ${name}.tar.gz
-	echo 'completed.'
-	#-------------------------------------------------------------------------
-
-	extract_folder ${name}.tar.gz ${name}
-
-	delete_folder ${name}.tar.gz 
-}
-
-
 download_videoengine_files(){
 	path=webrtc/modules/video_render/android/java/src/org/webrtc/videoengine.tar.gz
 	name='videoengine'
