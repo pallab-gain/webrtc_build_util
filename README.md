@@ -1,2 +1,11 @@
-# webrtc_build_util
-A simple shell script that download all java files that webrtc jar library use.
+# WebRTC_BuildScript
+A simple shell script that download all java files from [webRTC master branch](https://chromium.googlesource.com/external/webrtc/) . 
+
+### Who needs it ?
+If you need to modify/add/remove some functionality of libjingle_peerconnection.jar in your webRTC library.
+
+### Screenshot
+  ![libjingle_peerconnection.jar file tree ](/master/Selection_017.png?raw=true "File Tree")
+
+
+
