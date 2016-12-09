@@ -3,7 +3,7 @@
 
 PREFIX='https://chromium.googlesource.com/external/webrtc/+archive'
 #this will change to adjast all previous, future, and current commits
-REVISION='fa830dcc28aedd8b6aab3a2b082c3a6edbdc0bb1'
+REVISION='406616fc6c25f894b636f80f414a6faac7055820'
 
 DOWNLOAD_PATH=${PREFIX}/${REVISION}
 
@@ -35,8 +35,7 @@ extract_folder(){
 
 download_org_webrtc_files(){
 
-	path_one=webrtc/api/java/android/org/webrtc.tar.gz
-	path_two=webrtc/api/java/src/org/webrtc.tar.gz
+	path_one=webrtc/api/android/java/src/org/webrtc.tar.gz
 	path_three=webrtc/base/java/src/org/webrtc.tar.gz
 
 	name=${PARENT_DIR}
@@ -47,10 +46,6 @@ download_org_webrtc_files(){
 	wget ${DOWNLOAD_PATH}/${path_one} -O ${name}.1.tar.gz
 	echo 'completed.'
 	#-------------------------------------------------------------------------
-	echo 'downloading files from '${DOWNLOAD_PATH}/${path_two}
-	wget ${DOWNLOAD_PATH}/${path_two} -O ${name}.2.tar.gz
-	echo 'completed.'
-	#-------------------------------------------------------------------------
 
 	#-------------------------------------------------------------------------
 	echo 'downloading files from '${DOWNLOAD_PATH}/${path_three}
@@ -59,12 +54,10 @@ download_org_webrtc_files(){
 	#-------------------------------------------------------------------------
 
 	extract_folder ${name}.1.tar.gz ${name}
-	extract_folder ${name}.2.tar.gz ${name}
 	extract_folder ${name}.3.tar.gz ${name}
 
 
 	delete_folder ${name}.1.tar.gz
-	delete_folder ${name}.2.tar.gz
 	delete_folder ${name}.3.tar.gz
 }
 
@@ -102,6 +95,6 @@ clear
 #download code
 download_org_webrtc_files
 #download video engine code
-download_videoengine_files
+# download_videoengine_files
 #download voice engine code
 download_voiceengine_files
