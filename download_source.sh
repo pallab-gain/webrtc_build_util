@@ -3,7 +3,7 @@
 
 PREFIX='https://chromium.googlesource.com/external/webrtc/+archive'
 #this will change to adjast all previous, future, and current commits
-REVISION='406616fc6c25f894b636f80f414a6faac7055820'
+REVISION='655f7cf355365643e3242d806116a79a3b8f90da'
 
 DOWNLOAD_PATH=${PREFIX}/${REVISION}
 
@@ -35,7 +35,7 @@ extract_folder(){
 
 download_org_webrtc_files(){
 
-	path_one=webrtc/api/android/java/src/org/webrtc.tar.gz
+	path_one=webrtc/sdk/android/api/org/webrtc.tar.gz
 	path_three=webrtc/base/java/src/org/webrtc.tar.gz
 
 	name=${PARENT_DIR}
